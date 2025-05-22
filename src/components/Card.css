@@ -1,18 +1,19 @@
+/* Styles the main card container */
 .card {
   box-sizing: border-box;
   border-radius: 20px;
-  width: 520px;       /* wider to fit text + buttons side by side */
-  height: 120px;      /* shorter height */
+  width: 520px;
+  height: 120px;
   padding: 10px 20px;
-  background-color: #1a1824; /* theme-matching dark background */
+  background-color: #1a1824;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: left;  /* text on left */
-  
+  text-align: left;
 }
 
+/* Styles the text content inside the card */
 .card-text {
   flex: 1;
   padding-right: 15px;
@@ -20,10 +21,12 @@
   font-size: 13px;
 }
 
-h3{
-    font-size: 22px;
+/* Styles the task title */
+h3 {
+  font-size: 22px;
 }
 
+/* Styles the completed status label */
 .completed-label {
   color: #f1faee;
   font-weight: bold;
@@ -31,37 +34,38 @@ h3{
   border-radius: 8px;
   text-align: center;
   width: 100%;
-  height: 48px;              /* same height as buttons */
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 4px;                /* remove padding */
-  margin: 1px;                 /* remove margin */
-  font-size: 1em;            /* consistent font size */
+  padding: 4px;
+  margin: 1px;
+  font-size: 1em;
 }
 
+/* Styles both delete and complete buttons */
 .delete, .complete {
-    background-color: #1a1824; /* theme-matching dark background */
+  background-color: #1a1824;
   height: 48px;
-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
-cursor: pointer;
+  cursor: pointer;
 }
 
-
-.delete{
-      font-size: 22px;
-      padding: 6px 0px;
+/* Styles the delete button specifically */
+.delete {
+  font-size: 22px;
+  padding: 6px 0px;
 }
 
-.complete{
-    padding:0px 0px  28px;
-    font-size: 27px;
-    
+/* Styles the complete button specifically */
+.complete {
+  padding: 0px 0px 28px;
+  font-size: 27px;
 }
 
-
+/* Styles the container that holds both buttons/label */
 .button {
   display: flex;
   flex-direction: column-reverse;
@@ -70,14 +74,16 @@ cursor: pointer;
   align-items: center;
 }
 
+/* Hover effect for the complete button */
 .complete:hover {
--webkit-box-shadow:0px 0px 26px 1px rgba(22,99,22,0.77);
--moz-box-shadow: 0px 0px 26px 1px rgba(22,99,22,0.77);
-box-shadow: 0px 0px 26px 1px rgba(22,99,22,0.77);
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(22,99,22,0.77);
+  -moz-box-shadow: 0px 0px 26px 1px rgba(22,99,22,0.77);
+  box-shadow: 0px 0px 26px 1px rgba(22,99,22,0.77);
 }
 
-.delete:hover{
-    -webkit-box-shadow:0px 0px 26px 1px rgba(150,44,44,0.77);
--moz-box-shadow: 0px 0px 26px 1px rgba(150,44,44,0.77);
-box-shadow: 0px 0px 26px 1px rgba(150,44,44,0.77);
+/* Hover effect for the delete button */
+.delete:hover {
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(150,44,44,0.77);
+  -moz-box-shadow: 0px 0px 26px 1px rgba(150,44,44,0.77);
+  box-shadow: 0px 0px 26px 1px rgba(150,44,44,0.77);
 }
