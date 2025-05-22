@@ -5,4 +5,3 @@
 ~ My first WebDev Project
 
 ~ Used React, Vite, Supabase
-
