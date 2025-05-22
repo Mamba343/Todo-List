@@ -4,6 +4,7 @@ import { GetAllTodos, handleSubmitTodo } from "./helpers/todoHelpers";
 import './App.css';
 
 function App() {
+
   const [newTodo, setNewTodo] = useState("");
   const [description, setDescription] = useState("");
   const [todos, setTodos] = useState([]);
